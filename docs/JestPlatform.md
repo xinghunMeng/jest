@@ -3,14 +3,14 @@ id: jest-platform
 title: Jest Platform
 ---
 
-You can cherry pick specific features of Jest and use them as standalone packages. Here's a list of the available packages:
+您可以选择Jest的特定功能并将其用作独立包。这是可用包的列表：
 
 ## jest-changed-files
 
-Tool for identifying modified files in a git/hg repository. Exports two functions:
+用于识别git / hg仓库中已修改文件的工具。输出两个函数:
 
-- `getChangedFilesForRoots` returns a promise that resolves to an object with the changed files and repos.
-- `findRepos` returns a promise that resolves to a set of repositories contained in the specified path.
+- `getChangedFilesForRoots` 返回一个promise，该promise将解析为具有已更改文件和repos的对象。
+- `findRepos` 返回一个promise，该promise将解析为指定路径中包含的一组存储库。
 
 ### Example
 
@@ -22,8 +22,7 @@ getChangedFilesForRoots(['./'], {
   lastCommit: true,
 }).then(result => console.log(result.changedFiles));
 ```
-
-You can read more about `jest-changed-files` in the [readme file](https://github.com/facebook/jest/blob/master/packages/jest-changed-files/README.md).
+您可以在[readme file](https://github.com/facebook/jest/blob/master/packages/jest-changed-files/README.md)中阅读有关`jest-changed-files`的更多信息。
 
 ## jest-diff
 
